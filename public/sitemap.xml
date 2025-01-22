@@ -8,68 +8,88 @@
   
   <!-- Features -->
   <url>
-    <loc>https://zebracat.ai/features/text-to-video</loc>
+    <loc>https://zebracat.ai/features/ai-text-to-video-generator</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zebracat.ai/features/ai-voices</loc>
+    <loc>https://zebracat.ai/features/ai-voice-generator-text-to-speech</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zebracat.ai/features/ai-editing</loc>
+    <loc>https://zebracat.ai/features/ai-video-editor</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zebracat.ai/features/blog-to-video-converter</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zebracat.ai/features/custom-footage-video-creator</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   
   <!-- Use Cases -->
   <url>
-    <loc>https://zebracat.ai/use-cases/marketing</loc>
+    <loc>https://zebracat.ai/use-cases/video-marketing</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zebracat.ai/use-cases/social</loc>
+    <loc>https://zebracat.ai/use-cases/social-media-videos</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zebracat.ai/use-cases/blog</loc>
+    <loc>https://zebracat.ai/use-cases/blog-content-videos</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zebracat.ai/use-cases/education</loc>
+    <loc>https://zebracat.ai/use-cases/educational-videos</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Company -->
   <url>
-    <loc>https://zebracat.ai/about</loc>
+    <loc>https://zebracat.ai/about-ai-video-creation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zebracat.ai/contact-support</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zebracat.ai/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://zebracat.ai/pricing</loc>
+    <loc>https://zebracat.ai/ai-video-pricing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zebracat.ai/ai-research-innovation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zebracat.ai/ethical-ai-commitment</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
   <!-- Legal -->
   <url>
-    <loc>https://zebracat.ai/privacy</loc>
+    <loc>https://zebracat.ai/privacy-policy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://zebracat.ai/terms</loc>
+    <loc>https://zebracat.ai/terms-of-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
