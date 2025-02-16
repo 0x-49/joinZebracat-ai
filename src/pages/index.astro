@@ -1,11 +1,432 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Logo from '../components/Logo';
+import { ArrowRight, CheckCircle, Zap } from 'lucide-react';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const title = "Zebracat AI - Craft Viral Videos in Seconds with AI ";
+const description = "Transform any content into engaging videos using advanced AI. No editing skills required. Join 50,000+ creators! ";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title={title} description={description}>
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-blue-950/95 backdrop-blur-sm border-b border-purple-500/20">
+    <div class="container mx-auto px-4">
+      <div class="flex h-20 items-center justify-between">
+        <a href="/" class="hover:opacity-90">
+          <Logo client:load />
+        </a>
+        <nav class="hidden space-x-8 md:flex">
+          <a href="#features" class="text-gray-300 hover:text-purple-400 font-medium"> Features</a>
+          <a href="#benefits" class="text-gray-300 hover:text-purple-400 font-medium"> Benefits</a>
+          <a href="#solutions" class="text-gray-300 hover:text-purple-400 font-medium"> Solutions</a>
+          <a href="#testimonials" class="text-gray-300 hover:text-purple-400 font-medium"> Testimonials</a>
+        </nav>
+        <a href="http://studio.zebracat.ai/signup/?via=maxime-emmanuel" 
+           class="rounded-lg bg-purple-600 px-6 py-2 font-semibold text-white hover:bg-purple-700 transition-all duration-300">
+          Get Started 
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative container mx-auto px-4 pt-32 pb-20 text-center overflow-hidden">
+    <!-- Dynamic Background Animation -->
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute inset-0 bg-gradient-to-r from-purple-900/30 via-blue-900/30 to-purple-900/30 animate-gradient"></div>
+      <div class="absolute inset-0 bg-[url('/hero-pattern.svg')] opacity-10 animate-float"></div>
+    </div>
+    
+    <div class="relative z-10">
+      <div class="mb-4 flex justify-center gap-4">
+        <span class="rounded-full bg-purple-600 px-4 py-2 text-sm font-medium animate-pulse">
+          4.8/5 on TrustPilot
+        </span>
+        <span class="rounded-full bg-blue-900/50 border border-blue-400/30 px-4 py-2 text-sm font-medium">
+          50,000+ Creators Trust Us
+        </span>
+      </div>
+      
+      <h1 class="mb-6 text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+        <span class="block mb-2 animate-slide-up">Unleash Your</span>
+        <span class="bg-gradient-to-r from-purple-400 via-pink-300 to-blue-300 text-transparent bg-clip-text animate-gradient-x">
+          Creative Revolution
+        </span>
+      </h1>
+      
+      <p class="mb-4 text-xl md:text-2xl text-blue-200 font-medium max-w-3xl mx-auto animate-fade-in">
+        Transform <span class="text-purple-300">Any Content</span> into Viral Videos in Seconds
+        <span class="block mt-2 text-lg text-blue-300">No editing skills required. Pure AI magic.</span>
+      </p>
+      
+      <div class="mb-8 flex flex-wrap justify-center gap-4 text-base md:text-lg text-blue-300">
+        <span class="flex items-center gap-2"><CheckCircle className="w-5 h-5 text-purple-400" /> 60% Off Annual Plans</span>
+        <span class="flex items-center gap-2"><Zap className="w-5 h-5 text-purple-400" /> Instant Video Generation</span>
+        <span class="flex items-center gap-2"><CheckCircle className="w-5 h-5 text-purple-400" /> Unlimited Creativity</span>
+      </div>
+      
+      <div class="flex flex-col md:flex-row justify-center gap-6 items-center">
+        <a href="http://studio.zebracat.ai/signup/?via=maxime-emmanuel" 
+           class="group w-full md:w-auto rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 p-1">
+          <div class="px-8 py-4 rounded-md bg-blue-950/90 hover:bg-transparent transition-all duration-300">
+            <span class="font-bold text-lg group-hover:text-white">Ignite Your Content</span>
+            <span class="ml-2 text-purple-300 group-hover:text-white">→</span>
+          </div>
+        </a>
+        <a href="http://studio.zebracat.ai/signup/?via=maxime-emmanuel" 
+           class="w-full md:w-auto rounded-lg border-2 border-purple-500/30 px-8 py-4 font-bold hover:bg-purple-500/20 transition-all duration-300 backdrop-blur-sm">
+          Watch the Magic <span class="ml-2">▶</span>
+        </a>
+      </div>
+      
+      <!-- Trust Indicators -->
+      <div class="mt-12 pt-8 border-t border-purple-500/20">
+        <p class="text-sm text-blue-300 mb-6">Trusted by Leading Creators & Brands</p>
+        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/10 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+            <img 
+              src="https://landing-page-images-seo.s3.eu-north-1.amazonaws.com/microsoftLogo.webp" 
+              alt="Microsoft - Trusted partner of Zebracat AI" 
+              class="h-6 md:h-8 object-contain grayscale group-hover:grayscale-0 transition-all duration-500" 
+              loading="lazy"
+              width="120"
+              height="32"
+            />
+          </div>
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/10 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+            <img 
+              src="https://landing-page-images-seo.s3.eu-north-1.amazonaws.com/Google_2015_logo.svg.webp" 
+              alt="Google - Trusted partner of Zebracat AI" 
+              class="h-6 md:h-8 object-contain grayscale group-hover:grayscale-0 transition-all duration-500" 
+              loading="lazy"
+              width="120"
+              height="32"
+            />
+          </div>
+          <div class="group relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-purple-600/10 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+            <img 
+              src="https://landing-page-images-seo.s3.eu-north-1.amazonaws.com/IBM_logo.svg.png" 
+              alt="IBM - Trusted partner of Zebracat AI" 
+              class="h-6 md:h-8 object-contain grayscale group-hover:grayscale-0 transition-all duration-500" 
+              loading="lazy"
+              width="120"
+              height="32"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof Section -->
+  <section id="benefits" class="bg-gradient-to-r from-blue-900/50 to-purple-900/50 py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="text-center transform hover:scale-105 transition-all duration-300">
+          <h3 class="text-4xl font-bold text-purple-300">95 </h3>
+          <p class="text-blue-300 font-medium">Faster Video Creation</p>
+        </div>
+        <div class="text-center transform hover:scale-105 transition-all duration-300">
+          <h3 class="text-4xl font-bold text-purple-300">70 </h3>
+          <p class="text-blue-300 font-medium">Cost Reduction</p>
+        </div>
+        <div class="text-center transform hover:scale-105 transition-all duration-300">
+          <h3 class="text-4xl font-bold text-purple-300">2M+ </h3>
+          <p class="text-blue-300 font-medium">Videos Created</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-blue-900/50">
+    <div class="container mx-auto px-4">
+      <h2 class="mb-12 text-center text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-purple-300 to-blue-200 text-transparent bg-clip-text">
+        Transform Your Content with AI Power 
+      </h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-lg bg-blue-950 p-6 hover:bg-blue-900 transition-all duration-300 transform hover:scale-105">
+          <h3 class="mb-4 text-xl font-semibold text-purple-300"> Text-to-Video Conversion</h3>
+          <p class="text-blue-200">Transform text prompts, scripts, or articles into engaging videos using AI. Combine your footage or AI visuals with lifelike voiceovers and effects.</p>
+        </div>
+        <div class="rounded-lg bg-blue-950 p-6 hover:bg-blue-900 transition-all duration-300 transform hover:scale-105">
+          <h3 class="mb-4 text-xl font-semibold text-purple-300"> AI Scene Generation</h3>
+          <p class="text-blue-200">Generate AI scenes in any style from text. Create unique, branded content that resonates with your audience.</p>
+        </div>
+        <div class="rounded-lg bg-blue-950 p-6 hover:bg-blue-900 transition-all duration-300 transform hover:scale-105">
+          <h3 class="mb-4 text-xl font-semibold text-purple-300"> Automated Video Editing</h3>
+          <p class="text-blue-200">Reduce editing time from 4 hours per minute to mere seconds. Our AI masters techniques to boost viewer engagement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For Section -->
+  <section id="solutions" class="bg-purple-900/50 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="mb-12 text-center text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-purple-300 to-blue-200 text-transparent bg-clip-text">
+        Who Benefits from Zebracat 
+      </h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div class="rounded-lg bg-purple-950 p-6 hover:bg-purple-900 transition-all duration-300 transform hover:scale-105">
+          <h3 class="mb-4 text-xl font-semibold text-blue-300"> Digital Marketers</h3>
+          <p class="text-purple-200">Create high-performing video ads quickly and cost-effectively. Generate thumb-stopping content that converts.</p>
+        </div>
+        <div class="rounded-lg bg-purple-950 p-6 hover:bg-purple-900 transition-all duration-300 transform hover:scale-105">
+          <h3 class="mb-4 text-xl font-semibold text-blue-300"> Business Owners</h3>
+          <p class="text-purple-200">Create professional product demos and promotional videos that boost engagement and sales.</p>
+        </div>
+        <div class="rounded-lg bg-purple-950 p-6 hover:bg-purple-900 transition-all duration-300 transform hover:scale-105">
+          <h3 class="mb-4 text-xl font-semibold text-blue-300"> Content Creators</h3>
+          <p class="text-purple-200">Produce engaging faceless videos for social media. Transform your content into multiple formats.</p>
+        </div>
+        <div class="rounded-lg bg-purple-950 p-6 hover:bg-purple-900 transition-all duration-300 transform hover:scale-105">
+          <h3 class="mb-4 text-xl font-semibold text-blue-300"> Educators & Trainers</h3>
+          <p class="text-purple-200">Turn lessons and courses into engaging video content. Create interactive learning experiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- CTA Section 1 -->
+    <div class="responsive-container relative py-20">
+      <div class="text-center">
+        <p class="text-blue-1200 dark:text-blue-8400 mb-12 max-w-3xl mx-auto text-xl leading-relaxed">
+          Stop waiting weeks for video ads.  In minutes, Zebracat AI empowers you to create high-impact videos that drive clicks and fuel your affiliated website's growth.
+        </p>
+        <a
+          href="http://studio.zebracat.ai/signup/?via=maxime-emmanuel"
+          class="inline-block px-10 py-5 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-xl font-semibold"
+        >
+          Unlock Instant Video Power
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-blue-900/50 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="mb-12 text-center text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-purple-300 to-blue-200 text-transparent bg-clip-text">
+        What Our Users Say 
+      </h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="rounded-lg bg-blue-950 p-6 hover:bg-blue-900 transition-all duration-300">
+          <p class="mb-4 text-blue-200">"Our blog traffic doubled after we started converting posts to videos with Zebracat. The AI-generated content is incredibly engaging!" </p>
+          <div class="flex items-center">
+            <img src="/testimonials/avatar1.jpg" alt="Sarah Johnson" class="mr-4 h-12 w-12 rounded-full ring-2 ring-purple-500" />
+            <div>
+              <p class="font-semibold text-purple-300">Sarah Johnson</p>
+              <p class="text-sm text-blue-300">Digital Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-lg bg-blue-950 p-6 hover:bg-blue-900 transition-all duration-300">
+          <p class="mb-4 text-blue-200">"Zebracat helped us create professional product demos in minutes. Our conversion rates increased by 45%!" </p>
+          <div class="flex items-center">
+            <img src="/testimonials/avatar2.jpg" alt="Michael Chen" class="mr-4 h-12 w-12 rounded-full ring-2 ring-purple-500" />
+            <div>
+              <p class="font-semibold text-purple-300">Michael Chen</p>
+              <p class="text-sm text-blue-300">E-commerce Owner</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-lg bg-blue-950 p-6 hover:bg-blue-900 transition-all duration-300">
+          <p class="mb-4 text-blue-200">"As a content creator, Zebracat is a game-changer. I can now produce 10x more content in the same time!" </p>
+          <div class="flex items-center">
+            <img src="/testimonials/avatar3.jpg" alt="Emma Rodriguez" class="mr-4 h-12 w-12 rounded-full ring-2 ring-purple-500" />
+            <div>
+              <p class="font-semibold text-purple-300">Emma Rodriguez</p>
+              <p class="text-sm text-blue-300">YouTuber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="bg-blue-900/50 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="mb-12 text-center text-3xl md:text-4xl font-bold bg-gradient-to-r from-white via-purple-300 to-blue-200 text-transparent bg-clip-text">
+        About Zebracat 
+      </h2>
+
+      <!-- What We Do Section -->
+      <section class="mb-20">
+        <h3 class="text-3xl font-semibold text-center mb-6 text-white">What Zebracat Does</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">AI-Powered Video Creation</h4>
+            <p class="text-lg text-blue-200">
+              Transform text, audio, or blog posts into engaging videos effortlessly. Using advanced AI technology, Zebracat turns your ideas into professional-quality videos in minutes.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Blog-to-Video & Audio-to-Video</h4>
+            <p class="text-lg text-blue-200">
+              Repurpose your existing content—convert blog posts or audio recordings into dynamic videos designed to captivate your audience.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">AI Voiceovers & Scene Generation</h4>
+            <p class="text-lg text-blue-200">
+              Create human-like AI voiceovers in multiple languages and generate custom visuals and scenes tailored to your brand. No design or voice talent required!
+            </p>
+          </div>
+        </div>
+      </section>
+
+          <!-- CTA Section 1 -->
+          <div class="responsive-container relative py-20">
+            <div class="text-center">
+              <p class="text-blue-1200 dark:text-blue-8400 mb-12 max-w-3xl mx-auto text-xl leading-relaxed">
+                Ready to strategically engineer a user experience that converts?  Zebracat AI provides the high-impact design engine to craft videos that compel clicks and maximize engagement with your affiliated website.
+              </p>
+              <a
+                href="http://studio.zebracat.ai/signup/?via=maxime-emmanuel"
+                class="inline-block px-10 py-5 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-xl font-semibold"
+              >
+                Engineer Your Conversion Machine
+              </a>
+            </div>
+          </div>
+        </section>
+    
+
+      <!-- Who We Serve Section -->
+      <section class="mb-20">
+        <h3 class="text-3xl font-semibold text-center mb-6 text-white">Who Zebracat is For</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Marketers</h4>
+            <p class="text-lg text-blue-200">
+              Create impactful video ads and social media content quickly and cost-effectively, boosting engagement and conversions.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Business Owners</h4>
+            <p class="text-lg text-blue-200">
+              Produce engaging marketing videos, product demos, and brand stories to connect with your audience and drive growth.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Content Creators</h4>
+            <p class="text-lg text-blue-200">
+              Easily generate videos for YouTube, Instagram, TikTok, and other platforms, helping you grow your presence and reach.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Anyone with a Vision</h4>
+            <p class="text-lg text-blue-200">
+              Whether you're a beginner or a seasoned creator, Zebracat makes video creation simple, efficient, and creative.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Challenges We Solve Section -->
+      <section class="mb-20">
+        <h3 class="text-3xl font-semibold text-center mb-6 text-white">The Problems We Solve</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Slow Video Production</h4>
+            <p class="text-lg text-blue-200">
+              Traditional video production takes days. With Zebracat, you can create stunning videos in minutes.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">High Costs</h4>
+            <p class="text-lg text-blue-200">
+              Eliminate the need for expensive equipment, software, or video agencies. Zebracat offers an affordable alternative.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Time-Intensive Editing</h4>
+            <p class="text-lg text-blue-200">
+              Automate video editing tasks with Zebracat's intuitive AI tools, saving you hours of manual work.
+            </p>
+          </div>
+          <div class="text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+            <h4 class="text-xl font-semibold mb-4 text-purple-300">Limited Creativity</h4>
+            <p class="text-lg text-blue-200">
+              Overcome creative blocks with AI-generated visuals, voiceovers, and scene designs that elevate your content.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="mb-20">
+        <h3 class="text-3xl font-semibold text-center mb-6 text-white">Our Team</h3>
+        <div class="max-w-3xl mx-auto text-center p-6 bg-blue-950/50 rounded-xl backdrop-blur-sm border border-purple-500/20">
+          <p class="text-lg text-blue-200">
+            Zebracat is built by a passionate team of innovators, technologists, and creatives who understand the challenges of modern video production. Leveraging our expertise in artificial intelligence, marketing, and content creation, we've developed a platform that's intuitive, powerful, and transformative. Together, we are redefining how stories are told in the digital age.
+          </p>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="text-center">
+        <h3 class="text-3xl font-semibold mb-6 text-white">Ready to Create Your First Video?</h3>
+        <p class="text-lg mb-6 text-blue-200">
+          Join thousands of users who have transformed their content strategies with Zebracat. Start creating professional videos today.
+        </p>
+        <a href="http://studio.zebracat.ai/signup/?via=maxime-emmanuel" 
+           class="inline-block bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700 transition duration-300">
+          Get Started for Free 
+        </a>
+      </section>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-950 py-12 border-t border-purple-500/20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <Logo client:load />
+          <p class="mt-4 text-blue-300">Transform your content into engaging videos with AI power.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Features</h4>
+          <ul class="space-y-2 text-blue-300">
+            <li> Text-to-Video</li>
+            <li> AI Scene Generation</li>
+            <li> Automated Editing</li>
+            <li> Brand Integration</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Resources</h4>
+          <ul class="space-y-2 text-blue-300">
+            <li><a href="/#docs" class="hover:text-purple-400"> Documentation</a></li>
+            <li><a href="/#tutorials" class="hover:text-purple-400"> Tutorials</a></li>
+            <li><a href="/#blog" class="hover:text-purple-400"> Blog</a></li>
+            <li><a href="/#faq" class="hover:text-purple-400"> FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white mb-4">Social Media</h4>
+          <ul class="space-y-2 text-blue-300">
+            <li><a href="https://www.twitter.com/Zebracat_AI" class="hover:text-purple-400" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.instagram.com/zebracat.ai/" class="hover:text-purple-400" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@zebracat.ai" class="hover:text-purple-400" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            <li><a href="https://www.linkedin.com/company/zebracat-ai/" class="hover:text-purple-400" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/channel/UCG09rtKcY7VnLCfsuPgy-4A" class="hover:text-purple-400" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-purple-500/20 text-center text-blue-300">
+        <p class="flex items-center justify-center gap-4">
+          <span>&copy; 2025 Zebracat AI. All rights reserved.</span>
+          <a href="tel:800-364-6587" class="hover:text-purple-400"> (800) 364-6587</a>
+        </p>
+        <p class="text-sm text-blue-300 mt-2">1042 E 14th Ave, West Fargo, ND 58078</p>
+      </div>
+    </div>
+  </footer>
 </Layout>

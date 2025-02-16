@@ -1,22 +1,210 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { 
+	title = "Zebracat AI - Craft Viral Videos in Seconds",
+	description = "Transform any content into engaging videos using advanced AI. No editing skills required."
+} = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/jpg" href="/zebracat ai.jpg" />
+		<link rel="apple-touch-icon" href="/zebracat ai.jpg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<!-- Primary Meta Tags -->
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://zebracat.ai/" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content="/zebracat ai.jpg" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://zebracat.ai/" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content="/zebracat ai.jpg" />
+
+		<!-- Performance Optimizations -->
+		<link rel="preload" as="image" href="/logo.svg" />
+		<link rel="preload" as="image" href="/zebracat ai.jpg" />
+		<link rel="preconnect" href="https://studio.zebracat.ai" />
+		
+		<!-- PWA Support -->
+		<meta name="theme-color" content="#1e1b4b" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<!-- Responsive Design Meta Tags -->
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="HandheldFriendly" content="true" />
+		
+		<!-- SEO Tags -->
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="AI video creation, video editing AI, content automation, video marketing, AI content creation, automated video editing, social media videos" />
+		<meta name="author" content="Zebracat AI" />
+		<link rel="canonical" href="https://zebracat.ai/" />
+		
+		<!-- Schema.org markup -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "SoftwareApplication",
+				"name": "Zebracat AI",
+				"applicationCategory": "MultimediaApplication",
+				"description": "Transform any content into engaging videos using advanced AI. No editing skills required.",
+				"operatingSystem": "Web",
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD"
+				},
+				"aggregateRating": {
+					"@type": "AggregateRating",
+					"ratingValue": "4.8",
+					"ratingCount": "50000",
+					"bestRating": "5",
+					"worstRating": "1"
+				},
+				"creator": {
+					"@type": "Organization",
+					"name": "Zebracat AI",
+					"url": "https://zebracat.ai",
+					"sameAs": [
+						"https://twitter.com/zebracatai",
+						"https://facebook.com/zebracatai",
+						"https://instagram.com/zebracatai"
+					]
+				}
+			}
+		</script>
 	</head>
-	<body>
+	<body class="min-h-screen bg-gradient-to-b from-blue-950 via-blue-900 to-purple-900 text-white">
 		<slot />
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+
+	/* Smooth Scrolling */
+	html {
+		scroll-behavior: smooth;
+	}
+
+	/* Mobile Optimizations */
+	@media (max-width: 768px) {
+		html {
+			font-size: 14px;
+		}
+	}
+
+	/* Performance Optimizations */
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	/* Animation Classes */
+	.animate-fade-in {
+		animation: fadeIn 0.5s ease-in;
+	}
+
+	.animate-slide-up {
+		animation: slideUp 0.8s ease-out;
+	}
+
+	.animate-gradient {
+		animation: gradient 8s ease infinite;
+		background-size: 400% 400%;
+	}
+
+	.animate-gradient-x {
+		animation: gradientX 3s ease infinite;
+		background-size: 200% auto;
+	}
+
+	.animate-float {
+		animation: float 6s ease-in-out infinite;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes slideUp {
+		from {
+			transform: translateY(20px);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	@keyframes gradientX {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	@keyframes float {
+		0% {
+			transform: translateY(0px);
+		}
+		50% {
+			transform: translateY(-20px);
+		}
+		100% {
+			transform: translateY(0px);
+		}
 	}
 </style>

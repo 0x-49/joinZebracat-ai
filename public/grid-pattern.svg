@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g opacity=".5">
+        <path d="M0 0h40v40H0zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40z" fill="#e2e8f0"/>
+        <path d="M0 200h40v40H0zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40z" fill="#e2e8f0"/>
+        <path d="M0 400h40v40H0zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40z" fill="#e2e8f0"/>
+        <path d="M0 600h40v40H0zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40z" fill="#e2e8f0"/>
+        <path d="M0 800h40v40H0zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40zm200 0h40v40h-40z" fill="#e2e8f0"/>
+    </g>
+</svg>

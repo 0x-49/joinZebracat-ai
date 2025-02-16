@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 25C10 16.716 16.716 10 25 10H175C183.284 10 190 16.716 190 25C190 33.284 183.284 40 175 40H25C16.716 40 10 33.284 10 25Z" fill="#6D28D9"/>
+    <text x="100" y="30" font-family="Arial" font-size="18" fill="white" text-anchor="middle" dominant-baseline="middle">Zebracat AI</text>
+</svg>
