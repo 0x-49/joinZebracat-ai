@@ -1,0 +1,10 @@
+---
+interface Props {
+  icon: any; // React component passed as a prop
+  className?: string; // Optional class name
+}
+
+const { icon: IconComponent, className = "" } = Astro.props;
+---
+
+<IconComponent class={className} />

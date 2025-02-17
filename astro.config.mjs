@@ -1,26 +1,7 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import react from '@astrojs/react';
+import react from '@astrojs/react'; // Import the React integration
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
-  server: {
-    port: 3000,
-    host: true,
-    headers: {
-      'Cache-Control': 'no-store, max-age=0',
-    }
-  },
-  vite: {
-    server: {
-      watch: {
-        usePolling: true,
-      },
-      hmr: {
-        protocol: 'ws',
-      }
-    }
-  }
+  integrations: [react()], // Notice the parentheses: `react()` creates an object
 });
